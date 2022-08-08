@@ -21,5 +21,5 @@ func main() {
 
 	port := os.Getenv("PORT")
 	log.Println("API is running on port " + port + "!")
-	http.ListenAndServe(port, router)
+	http.ListenAndServe(":"+port, router)
 }
