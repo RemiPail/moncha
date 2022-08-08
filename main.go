@@ -15,7 +15,7 @@ func main() {
 	}
 
 	randomHandler := func(w http.ResponseWriter, req *http.Request) {
-		choices := [3]string{"Pile", "Face", "Dans ton cul !"}
+		choices := [3]string{"Pile", "Face", "Dans ton cul !!!"}
 		pick := choices[rand.Intn(len(choices))]
 
 		io.WriteString(w, pick)
